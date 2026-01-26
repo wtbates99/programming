@@ -1,5 +1,5 @@
 x = 789
-y = 12122
+y = "racecar" 
 
 def isPalindrome(x):
     s = str(x)
@@ -9,10 +9,10 @@ def isPalindrome(x):
         if s[i] == s[l-i-1]:
             continue
         else:
-            print('Not a isPalindrome')
+            print(f"{x} is not a palindrome")
             return 0 
 
-    print("Is a palindrome")
+    print(f"{x} is a palindrome")
 
 isPalindrome(x)
 isPalindrome(y)
