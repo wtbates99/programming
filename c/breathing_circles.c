@@ -4,10 +4,10 @@
 #include "raylib.h"
 #include <math.h>
 
-#define MAX_CIRCLES 100
-#define NEW_CIRCLES 5
+#define MAX_CIRCLES 200
+#define NEW_CIRCLES 10
 #define MIN_LIFE 2.0f
-#define MAX_LIFE 10.0f
+#define MAX_LIFE 5.0f
 
 typedef struct {
   float x, y;
