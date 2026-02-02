@@ -65,7 +65,7 @@ int main(void) {
 
     // Draw
     BeginDrawing();
-    ClearBackground(RAYWHITE);
+    ClearBackground(BLACK);
     for (int i = 0; i < circleCount; i++) {
       float alpha =
           sinf((circles[i].age / circles[i].lifeTime) * 3.14159f) * 255.0f;
