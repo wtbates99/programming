@@ -1,0 +1,17 @@
+[project]
+name = "pytorch-learning"
+version = "0.1.0"
+description = "NBA PPG predictor - PyTorch model trained on LeagueGameLog data"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.10.0",
+    "nba_api>=1.4",
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "scikit-learn>=1.3",
+]
+
+[project.scripts]
+nba-ppg-train = "main:main"
+nba-ppg-predict = "predict:main"
