@@ -43,11 +43,17 @@ double wind_pressure(double air_density_value, double wind_speed_value) {
 }
 
 int main() {
+
+  double new_speed = WIND_SPEED;
+
+    for (int i = 0; i < 1000; i++){
     double pressure = air_pressure_at_altitude(HEIGHT_M);  // Pa
     double density = air_density(pressure, TEMPERATURE); // kg/m^3
-    double wind_press = wind_pressure(density, WIND_SPEED); // Pa
+    double wind_press = wind_pressure(density, WIND_SPEED+i); // Pa
+    
+    printf("Wind pressure at %i meter altitude with %i speed: %f Pa\n",HEIGHT_M, WIND_SPEED+i, wind_press);
 
-    printf("Wind pressure at %i meter altitude with %i speed: %f Pa\n",HEIGHT_M, WIND_SPEED, wind_press);
+  }
 
     return 0;
 }
