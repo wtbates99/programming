@@ -1,7 +1,7 @@
 // gcc breathing_circles.c -o breathing_circles.o -lraylib -lm &&
 // ./breathing_circles.o
 
-#include "raylib.h"
+#include "/opt/homebrew/Cellar/raylib/5.5/include/raylib.h"
 #include <math.h>
 
 #define MAX_CIRCLES 200
